@@ -1,0 +1,85 @@
+button{
+    padding: 0.5em 0.8em;
+    font-size: 1em;
+    font-family: arial;
+    color: white;
+    background: linear-gradient(to top left, #6F04D9, #05C7F2);
+    border-style: none;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.title{
+    font-size: 1em;
+    font-family: sans-serif;
+    color: rgba(0,0,0,0);
+    background: linear-gradient(to right, #6F04D9, #05C7F2);
+    background-clip: text;
+}
+
+.sub-title{
+    font-family: sans-serif;
+}
+
+.content{
+    margin: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+    justify-items: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.card{
+    display: flex;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px rgba(90, 19, 255, 0.719);
+    padding: 1em;
+    position: relative;
+    top: 30px;
+    height: 100%;
+    align-items: center;
+}
+
+
+.card-info{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(to top left, #6F04D9, #05C7F2);
+    color: white;
+    border-radius: 15px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    clip-path: circle(5% at 94% 11%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.card-info:hover{
+    clip-path: circle(80%)
+}
+
+.card-info:hover .i-button{
+    color:rgba(255,255,255,1);
+}
+
+.i-button{
+    position: absolute;
+    top: 7%;
+    left: 93.5%;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    z-index: 1;
+}
+
+.workspace{
+    border: 5px solid;
+    border-image: linear-gradient(to bottom right, #6F04D9, #05C7F2) 1;
+    padding: 1em;
+    margin: 0.3em 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script_1.js"></script>
+</head>
+<body>
+    <h1><span class="title">Learning Javascript</span></h1>
+    <div class="content">
+        <div class="card">
+            <div class="card-content">
+                <span class="sub-title">document.getElementById().innerHTML</span>
+                <div class="workspace" id="js-inject"></div>
+                <button onclick=onClickButton()>Show</button>
+            </div>
+            <div class="card-info">
+                <span class="i-button">i</span>
+                Searches the document for required element and changes its innerHTML.
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <span class="sub-title">document.write()</span>
+                <div class="workspace">
+                    <script>document.write("written between html<br>should only be used for testing purposes.")</script>
+                </div>
+                <button onclick=tryDocWrite()>Show</button>
+            </div>
+            <div class="card-info">
+                <span class="i-button">i</span>
+                Writes in HTML file. If it is called after html file has been loaded then it will remove all the contents of HTML file and then writes in it.
+            </div>
+        </div>
+        <div class="card">
+
+        </div>
+        <div class="card"></div>
+    </div>
+</body>
+</html>
