@@ -12,5 +12,5 @@ function alertUser(){
 }
 
 function consoleLog(){
-    console.log(window.prompt("Write something to console"))
+    console.log("Ooga Booga Monke")
 }
