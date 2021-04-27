@@ -7,57 +7,98 @@
 </head>
 <body>
     <h1><span class="title">Learning Javascript</span></h1>
-    <div class="content">
-        <div class="card">
-            <div class="card-content">
-                <span class="sub-title">document.getElementById().innerHTML</span>
-                <div class="workspace" id="js-inject"></div>
-                <button onclick=onClickButton()>Show</button>
-            </div>
-            <div class="card-info">
-                <span class="i-button">i</span>
-                Searches the document for required element and changes its innerHTML.
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <span class="sub-title">document.write()</span>
-                <div class="workspace">
-                    <script>document.write("written between html<br>should only be used for testing purposes.")</script>
+    <div class="content-heading-wrapper">
+        <h1 class="content-heading">JS OUTPUT</h1>
+        <div class="content">
+            <div class="card">
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <span class="sub-title">document.getElementById().innerHTML</span>
+                        <div class="workspace" id="js-inject"></div>
+                        <button onclick=onClickButton()>Show</button>
+                    </div>
+                    <div class="card-info">
+                        <span class="i-button">i</span>
+                        Searches the document for required element and changes its innerHTML.
+                    </div>
                 </div>
-                <button onclick=tryDocWrite()>Show</button>
             </div>
-            <div class="card-info">
-                <span class="i-button">i</span>
-                Writes in HTML file. If it is called after html file has been loaded then it will remove all the contents of HTML file and then writes in it.
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <span class="sub-title">window.alert()</span>
-                <div class="workspace">
-                    below button shows alert box.
+            <div class="card">
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <span class="sub-title">document.write()</span>
+                        <div class="workspace">
+                            <script>document.write("written between html<br>should only be used for testing purposes.")</script>
+                        </div>
+                        <button onclick=tryDocWrite()>Show</button>
+                    </div>
+                    <div class="card-info">
+                        <span class="i-button">i</span>
+                        Writes in HTML file. If it is called after html file has been loaded then it will remove all the contents of HTML file and then writes in it.
+                    </div>
                 </div>
-                <button onclick=alertUser()>Alert !</button>
             </div>
-            <div class="card-info">
-                <span class="i-button">i</span>
-                Displays alert box.<br>"window" keyword is optional because by default "window" objects are global.
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-content">
-                <span class="sub-title">console.log()</span>
-                <div class="workspace">
-                    Text below will get logged: <br>"Ooga Booga Monke"
+            <div class="card">
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <span class="sub-title">window.alert()</span>
+                        <div class="workspace">
+                            below button shows alert box.
+                        </div>
+                        <button onclick=alertUser()>Alert !</button>
+                    </div>
+                    <div class="card-info">
+                        <span class="i-button">i</span>
+                        Displays alert box.<br>"window" keyword is optional because by default "window" objects are global.
+                    </div>
                 </div>
-                <button onclick=consoleLog()>Log To Console</button>
             </div>
-            <div class="card-info">
-                <span class="i-button">i</span>
-                Logs the message on browser console.
+            <div class="card">
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <span class="sub-title">console.log()</span>
+                        <div class="workspace">
+                            Text below will get logged: <br>"Ooga Booga Monke"
+                        </div>
+                        <button onclick=consoleLog()>Log To Console</button>
+                    </div>
+                    <div class="card-info">
+                        <span class="i-button">i</span>
+                        Logs the message on browser console.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <!--Javascript statements-->
+
+    <div class="content-heading-wrapper">
+        <h1 class="content-heading">JS STATEMENTS</h1>
+        <div class="content-text">
+            <ul class="imp-points list">
+                <li>In programming language, instructions give to computer are called <b>statements</b>.</li>
+                <li>Javascript program is a list of programming <b>statements</b>.</li>
+                <li>Javascript statements composed of: <b>Values, Operators, Keywords and Comments</b>.</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="card">
+                <div class="card-content-wrapper">
+                    <div class="card-content">
+                        <span class="sub-title">Semicolons (;)</span>
+                        <div class="workspace">
+                            <b>Example:</b><br>
+                            a=5;b=3;c=2;
+                        </div>
+                    </div>
+                    <div class="card-info">
+                        <span class="i-button">i</span>
+                            Semicolons are used to seperate javascript statements.
+                    </div>
+                </div>
+            </div>
+ 
+        </div>
 </body>
 </html>
