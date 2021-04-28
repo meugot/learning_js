@@ -13,6 +13,10 @@ button{
     cursor: pointer;
 }
 
+table{
+    margin: 1em;
+}
+
 .title{
     font-size: 1em;
     font-family: sans-serif;
@@ -114,4 +118,30 @@ button{
 
 .list li::marker{
     color: #009cbe;
+}
+
+.code-block{
+    background: rgb(49, 49, 49);
+    line-height: 1.2em;
+    padding:0.2em;
+    color: white;
+    border-radius: 3px;
+}
+
+.heading-row{
+    font-weight: bold;
+}
+
+.one-word{
+    width: 20%;
+    text-align: left;
+    padding: 0.5em;
+    background-color: rgb(118, 116, 255);
+}
+
+.explanation{
+    width: 80%;
+    text-align: left;
+    padding: 0.5em;
+    background-color: rgb(171, 164, 255);
 }
