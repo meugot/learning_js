@@ -27,6 +27,7 @@ table{
 
 .sub-title{
     font-family: sans-serif;
+    font-weight: bold;
 }
 
 .content-heading{
@@ -96,7 +97,7 @@ table{
 }
 
 .card-info:hover .i-button{
-    color:rgba(255,255,255,1);
+    color:rgba(255,255,255,0);
 }
 
 .i-button{
@@ -144,4 +145,8 @@ table{
     text-align: left;
     padding: 0.5em;
     background-color: rgb(171, 164, 255);
+}
+
+.content-text{
+    margin:1rem;
 }

@@ -194,5 +194,404 @@
             </tbody>
         </table>
     </div> 
+    <div class="content-heading-wrapper">
+        <h1 class="content-heading">JS STATEMENTS</h1>
+        <div class="content-text">
+            <p>
+                HTML events are things that happen in.
+                Javascript can react with those events. <br>
+            </p> 
+            Some examples of <b>HTML events</b> are: 
+           <ul style="margin-top:0;">
+                <li>clicking a button</li>
+                <li>when page is finished loading</li>
+                <li>exiting page</li>
+                <li>etc.</li>
+           </ul>
+            <br>
+       </div>
+    </div>
+    <div class="content-heading-wrapper">
+        <h1 class="content-heading">JS STRINGS</h1> 
+        <div class="content-text">
+            <h4>Strings in JS are collection of characters.</h4>
+            <h4>We can initialize strings as objects but it slows down the website.</h4>
+            <h4>Examples:</h4>
+            <div class="content">
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Adding Strings</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                   var x = "Hello" + 2 + 3;<br>
+                                   >>>&nbsp;&nbsp; Hello23<br><br>
+                                   var y = 3 + 5 + "Car";<br>
+                                   >>>&nbsp;&nbsp; 8Car<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Javascript evaluates expression from left so in second example it will add numbers first then add it to string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">String Can Be Objects</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "String";<br>
+                                    var y = new String("String");<br>
+                                    x==y;<br>
+                                    >>>&nbsp;&nbsp;true<br>
+                                    x===y;<br>
+                                    >>>&nbsp;&nbsp;false<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           First is true because there value are same. But in second one they're not of same type.
+                        </div>
+                   </div>
+               </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Comparing Objects</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = new String("String");<br>
+                                    var y = new String("String");<br>
+                                    x==y;<br>
+                                    >>>&nbsp;&nbsp;false<br>
+                                    x===y;<br>
+                                    >>>&nbsp;&nbsp;false<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                            Both are returning false because objects can't be compared in Javascript.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Some methods for strings:</h4>
+            <div class="content">
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Length Method</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                   var x = "Hello";<br>
+                                   x.length;<br>
+                                   >>>&nbsp;&nbsp; 5<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Length method returns the length of string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Finding A String</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "String";<br>
+                                    x.indexOf("t");<br>
+                                    >>>&nbsp;&nbsp;1<br>
+                                    x.lastIndexOf("i",4);<br>
+                                    >>>&nbsp;&nbsp;1<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           It will return the first occurence of the string to be found in given string.
+                           Second argument specifies leftmost position from where it starts and proceed towards ending.
+                           returns -1 if string is not found.
+                        </div>
+                   </div>
+               </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Finding a string from the last</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.lastIndexOf("i");<br>
+                                    >>>&nbsp;&nbsp;5<br>
+                                    x.lastIndexOf("i",4);<br>
+                                    >>>&nbsp;&nbsp;3<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           It searches from the right and returns first occurence from the "right".
+                           Second argument specifies rightmost position from where it starts and proceed towards beginning.
+                           returns -1 if the string is not found.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Searching a string</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.search("i");<br>
+                                    >>>&nbsp;&nbsp;3<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Same as indexOf but cannot take second argument. It can take regular expressions. indexOf cannot take regular expressions.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Slicing a String</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.slice(3,6);<br>
+                                    >>>&nbsp;&nbsp;ini<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Takes out the specified part of string. First argument specifies start and second argument stop-1 .
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Slicing a String using slice</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.slice(3,6);<br>
+                                    >>>&nbsp;&nbsp;ini<br>
+                                    x.slice(-4,-2);<br>
+                                    >>>&nbsp;&nbsp;in<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Takes out the specified part of string. First argument specifies start and second argument stop-1 .
+                           If you omit the second parameter the it will slice out the rest string.
+                        </div>
+                    </div>
+                </div>
+                 <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Slicing a String using Substring</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.substring(3,6);<br>
+                                    >>>&nbsp;&nbsp;ini<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Same as slice. but it cannot negative indexes. If you omit second it will slice out rest string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Slicing a String using Substr</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.substr(3,4);<br>
+                                    >>>&nbsp;&nbsp;inig<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           It also slices out the string. First argument specifies starting position and second argument specifies required length.
+                           omiting second argument will return rest string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Replacing String</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.substr("i","Ho");<br>
+                                    >>>&nbsp;&nbsp;StrHonig<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           It doesn't changes the string. It return new string.
+                           Replaces the first occurence of given string.
+                           Regular expression are not written in quotes.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Changing Case</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.toLowerCase();<br>
+                                    >>>&nbsp;&nbsp;strinig<br>
+                                    x.toUpperCase();<br>
+                                    >>>&nbsp;&nbsp;STRINIG<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           toLowerCase changes case to lowercase.
+                           toUpperCase changes case to uppercase.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Concatinating Strings</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.concat(" ","broom","hola");<br>
+                                    >>>&nbsp;&nbsp;Strinig broomhola<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           you can put as many arguments as you want they will all add up to make one string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Trimming Strings</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "&nbsp;&nbsp; Strinig &nbsp;&nbsp;";<br>
+                                    x.trim()<br>
+                                    >>>&nbsp;&nbsp;Strinig<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           It removes all white spaces before and after the string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">String Padding</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "&nbsp;&nbsp; Strinig &nbsp;&nbsp;";<br>
+                                    x.trim()<br>
+                                    >>>&nbsp;&nbsp;Strinig<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           It removes all white spaces before and after the string.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Extracting String Characters</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x.charAt(0)
+                                    >>>&nbsp;&nbsp;S<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           Extracts the character at specified position.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Extracting String Character using []</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "Strinig";<br>
+                                    x[0];<br>
+                                    >>>&nbsp;&nbsp;S<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           same as charAt(). If no character found it returns undefined while str charAt() returns empty string.
+                           Doesn't give error when we try to change value but doesn't change the value either. as strings are immutable.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content-wrapper">
+                        <div class="card-content">
+                            <span class="sub-title">Converting String to an Array</span>
+                            <div class="workspace">
+                                <div class="code-block">
+                                    var x = "a,b,c,d,e,f,g";<br>
+                                    x.split(",");<br>
+                                    >>>&nbsp;&nbsp;["a","b","c","d","e","f","g"]<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-info">
+                           <span class="i-button">i</span>
+                           same as charAt(). If no character found it returns undefined while str charAt() returns empty string.
+                           Doesn't give error when we try to change value but doesn't change the value either. as strings are immutable.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
